@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirección Aleatoria</title>
+  <script>
+    function redirectRandom() {
+      const urls = [
+    "https://chat.whatsapp.com/Hony71pviPFEzNYKcUivZ5",
+    "https://chat.whatsapp.com/E5398mLwGor4i9xltF9kUz",
+    "https://chat.whatsapp.com/JcxdrbjpUPVClW5Lt2JDV2",
+    "https://chat.whatsapp.com/DfnA7Q6tCWFG4kQ9bBYPKN"
+      ];
+
+      const randomIndex = Math.floor(Math.random() * urls.length);
+      window.location.href = urls[randomIndex];
+    }
+
+    // Ejecutar automáticamente al cargar la página
+    window.onload = redirectRandom;
+  </script>
+</head>
+<body>
+  <p>Redireccionando...</p>
+</body>
+</html>
